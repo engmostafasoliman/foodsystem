@@ -1,0 +1,17 @@
+# Mark build scripts / config files as documentation so they don't count
+*.yaml linguist-documentation
+*.yml linguist-documentation
+*.json linguist-documentation
+*.xml linguist-documentation
+*.sh linguist-documentation
+
+# Keep Dart as code
+*.dart linguist-language=Dart
+# Force GitHub to count all files as Dart
+* linguist-language=Dart
+
+# Optional: Ignore non-Dart folders
+assets/* linguist-documentation
+images/* linguist-documentation
+*.md linguist-documentation
+*.json linguist-documentation
